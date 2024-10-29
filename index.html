@@ -14,6 +14,7 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <!-- nav bar -->
@@ -132,10 +133,10 @@
     </section>
     <!-- // end slider -->
     <!-- features -->
-    <section class="py-5">
+    <section class="py-5" data-aos="fade-up" data-aos-duration="3000">
       <div class="container">
         <div class="text-center">
-          <h2>Fetured Bikes In This Year</h2>
+          <h2 data-aos="fade-right">Fetured Bikes In This Year</h2>
           <p>Best bike collection</p>
         </div>
         <div class="row">
@@ -155,7 +156,11 @@
 
     <!-- latest news -->
     <section class="py-5">
-      <div class="container">
+      <div
+        class="container"
+        data-aos="fade-down-right"
+        data-aos-duration="2000"
+      >
         <div class="text-center">
           <h2>Latest News</h2>
         </div>
@@ -213,7 +218,7 @@
           </h2>
         </div>
         <div class="row mt-5">
-          <div class="col-md-4">
+          <div class="col-md-4" data-aos="flip-left" data-aos-duration="1000">
             <div class="card text-center p-3">
               <img
                 src="images/client1.png"
@@ -237,7 +242,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4" data-aos="flip-right" data-aos-duration="1000">
             <div class="card text-center my-4 my-md-0 p-3">
               <img
                 src="images/client2.png"
@@ -261,7 +266,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4" data-aos="flip-down" data-aos-duration="1000">
             <div class="card text-center p-3">
               <img
                 src="images/client3.png"
@@ -300,10 +305,14 @@
           </h2>
         </div>
         <div class="row mt-5">
-          <div class="col-md-6">
+          <div class="col-md-6" data-aos="zoom-in" data-aos-duration="1000">
             <img src="images/faq.png" alt="" />
           </div>
-          <div class="col-md-6 mt-4 mt-md-0">
+          <div
+            class="col-md-6 mt-4 mt-md-0"
+            data-aos="zoom-in-up"
+            data-aos-duration="1000"
+          >
             <div class="accordion" id="accordionExample">
               <div class="accordion-item">
                 <h2 class="accordion-header">
@@ -459,5 +468,9 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
